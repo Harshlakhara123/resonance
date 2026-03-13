@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="resonanceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(20, 20)">
+    <rect x="0" y="35" width="10" height="20" rx="5" fill="url(#resonanceGradient)" />
+    <rect x="18" y="20" width="10" height="50" rx="5" fill="url(#resonanceGradient)" />
+    <rect x="36" y="0" width="10" height="90" rx="5" fill="url(#resonanceGradient)" />
+    <rect x="54" y="10" width="10" height="70" rx="5" fill="url(#resonanceGradient)" />
+    <rect x="72" y="30" width="10" height="30" rx="5" fill="url(#resonanceGradient)" />
+    <path d="M 5 45 Q 23 25 41 45 T 77 45" fill="none" stroke="#1e293b" stroke-width="3" stroke-linecap="round" opacity="0.2"/>
+  </g>
+
+  <text x="120" y="72" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="48" font-weight="800" fill="#0f172a" letter-spacing="3">RESONANCE</text>
+  
+  <text x="125" y="100" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#64748b" letter-spacing="5">AI VOICE PLATFORM</text>
+</svg>
