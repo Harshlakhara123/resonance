@@ -14,7 +14,7 @@ import {
 import {
   PrismaClient,
   type VoiceCategory,
-} from "../src/generated/prisma/client";
+} from "@prisma/client";
 
 import { CANONICAL_SYSTEM_VOICE_NAMES } from "../src/features/voices/data/voice-scoping";
 

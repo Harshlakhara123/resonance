@@ -13,7 +13,7 @@ export const WavyBackground = ({
   blur = 10,
   speed = "fast",
   waveOpacity = 0.5,
-  waveYoffset = 250,
+  waveYOffset = 250,
   ...props
 }: {
   children?: React.ReactNode;
@@ -25,7 +25,7 @@ export const WavyBackground = ({
   blur?: number;
   speed?: "slow" | "fast";
   waveOpacity?: number;
-  waveYoffset?: number;
+  waveYOffset?: number,
   [key: string]: unknown;
 }) => {
   const noise = createNoise3D();
@@ -68,7 +68,7 @@ export const WavyBackground = ({
         ctx.strokeStyle = waveColors[i % waveColors.length];
         for (x = 0; x < w; x += 5) {
           const y = noise(x / 800, 0.3 * i, nt) * 100;
-          ctx.lineTo(x, y + waveYoffset);
+          ctx.lineTo(x, y + waveYOffset);
         }
         ctx.stroke();
         ctx.closePath();
@@ -84,7 +84,7 @@ export const WavyBackground = ({
       drawWave(5);
       animationIdRef.current = requestAnimationFrame(render);
     }
-  }, [backgroundFill, waveOpacity, waveYoffset]);
+  }, [backgroundFill, waveOpacity, waveYOffset]);
 
   const init = useCallback(() => {
     canvas = canvasRef.current;
